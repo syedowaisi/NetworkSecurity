@@ -1,3 +1,32 @@
 python-dotenv
 pandas 
 numpy
+pymongo
+certifi
+
+# -e .
+
+
+# What is -e . in requirements.txt?
+# -e means “editable mode”.
+
+# The . means “the current directory” (where your project lives).
+
+# When you list -e . in your requirements.txt, it tells pip to install your current project in a special way called “editable mode.”
+
+# What is “editable mode”?
+# Editable mode installs your project so that any changes you make to the code are instantly available—you don’t have to reinstall the package every time you update your code.
+
+# This is mostly used by developers when they are still building or working on a project.
+
+# Why must I have a setup.py?
+# setup.py defines your project as a Python package.
+
+# When you run pip install -e ., pip looks at your setup.py to figure out how to "install" your code.
+
+# Without a setup.py or pyproject.toml, pip cannot recognize your project as a package.
+
+# What happens when you pip install -e .?
+# Pip creates a "link" in your Python environment that points directly to your project's source code folder.
+
+# Now, editing any .py file in your project directory will update your installed package immediately.
