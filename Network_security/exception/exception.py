@@ -2,7 +2,7 @@ import sys
 # import logging
 from  Network_security.logging import logger
 
-def NetworkSecurityexception(Exception):
+class NetworkSecurityexception(Exception):
     def __init__(self,error_message,error_details:sys):
         self.error_message=error_message
         _,_,exc_tb=error_details.exc_info()
@@ -16,10 +16,10 @@ def NetworkSecurityexception(Exception):
         )
     
 
-# if __name__=="__main__":
-#     try:
-#         a=1/0
-#         print("this will not be printed",a)
-#     except Exception as e:
-#         logger.logging.info("divide by zero error") 
-#         raise NetworkSecurityexception(e,sys)
+if __name__=="__main__":
+    try:
+        a=1/0 
+        print("this will not be printed",a)
+    except Exception as e:
+        logger.logging.info("divide by zero error") 
+        raise NetworkSecurityexception(e,sys)
