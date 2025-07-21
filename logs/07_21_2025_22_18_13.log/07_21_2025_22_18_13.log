@@ -1,0 +1,5 @@
+[2025-07-21 22:18:21,270] 15 root INFO initiate the data ingesiton
+[2025-07-21 22:18:32,730] 60 root INFO data splits into train and test set
+[2025-07-21 22:18:32,731] 65 root INFO exporting train and test file path
+[2025-07-21 22:18:32,865] 71 root INFO exported test and train path
+[2025-07-21 22:18:32,866] 17 root INFO Data initiation completed 
