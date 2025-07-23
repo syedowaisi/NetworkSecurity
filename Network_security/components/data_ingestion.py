@@ -30,7 +30,7 @@ class Dataingestion:
             database_name=self.data_ingestion_config.database_name
             collection_name=self.data_ingestion_config.collection_name
             self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
-            collection=self.mongo_client[database_name][collection_name]
+            collection=self.mongo_client[database_name][collection_name] 
             
             df=pd.DataFrame(list(collection.find())) 
             if "_id" in df.columns.to_list():
@@ -72,7 +72,7 @@ class Dataingestion:
             
         except Exception as e:
             raise NetworkSecurityexception(e,sys)
-        
+         
     def initiate_data_ingestion(self):
         try:
             dataframe=self.export_collection_asdf()
