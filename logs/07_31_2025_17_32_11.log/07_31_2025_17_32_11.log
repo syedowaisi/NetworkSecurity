@@ -1,0 +1,8 @@
+[2025-07-31 17:32:17,689] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-07-31 17:32:17,700] 107 dagshub INFO Accessing as osyed8452
+[2025-07-31 17:32:24,367] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/repos/osyed8452/NetworkSecurity "HTTP/1.1 200 OK"
+[2025-07-31 17:32:26,089] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-07-31 17:32:26,094] 107 dagshub INFO Initialized MLflow to track repo "osyed8452/NetworkSecurity"
+[2025-07-31 17:32:26,096] 107 dagshub INFO Repository osyed8452/NetworkSecurity initialized!
+[2025-07-31 17:32:56,991] 58 root INFO loading the object from final_model/preprocessor.pkl
+[2025-07-31 17:32:57,003] 58 root INFO loading the object from final_model/model.pkl

@@ -21,6 +21,9 @@ from sklearn.ensemble import (
 )
 
 import mlflow
+import dagshub
+dagshub.init(repo_owner='osyed8452', repo_name='NetworkSecurity', mlflow=True)
+
 
 class ModelTrainer:
     def __init__(self,data_transformation_artifact:DataTransformationArtifact,model_trainer_config:ModelTrainerConfig):
@@ -39,10 +42,15 @@ class ModelTrainer:
             mlflow.log_metric("f1score",f1_score)
             mlflow.log_metric("precision score",precision_score)
             mlflow.log_metric("recall score",recall_score)
-            mlflow.sklearn.log_model(bestmodel,"model") 
             
+            import shutil
+            model_path = "model"
+            if os.path.exists(model_path):
+                shutil.rmtree(model_path)
+                
+            mlflow.sklearn.save_model(bestmodel, model_path)
+            # mlflow.sklearn.save_model(bestmodel,"model") 
             
-    
     def train_model(self,x_train,y_train,x_test,y_test):
         models={
             "logistic regression":LogisticRegression(verbose=1),
