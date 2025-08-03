@@ -1,0 +1,6 @@
+[2025-08-02 15:51:40,817] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-02 15:51:40,828] 107 dagshub INFO Accessing as osyed8452
+[2025-08-02 15:51:41,944] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/repos/osyed8452/NetworkSecurity "HTTP/1.1 200 OK"
+[2025-08-02 15:51:42,967] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-02 15:51:42,970] 107 dagshub INFO Initialized MLflow to track repo "osyed8452/NetworkSecurity"
+[2025-08-02 15:51:42,971] 107 dagshub INFO Repository osyed8452/NetworkSecurity initialized!

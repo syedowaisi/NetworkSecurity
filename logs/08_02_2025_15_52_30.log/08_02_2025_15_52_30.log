@@ -1,0 +1,39 @@
+[2025-08-02 15:52:34,886] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-02 15:52:34,896] 107 dagshub INFO Accessing as osyed8452
+[2025-08-02 15:52:36,013] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/repos/osyed8452/NetworkSecurity "HTTP/1.1 200 OK"
+[2025-08-02 15:52:37,140] 1025 httpx INFO HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-02 15:52:37,144] 107 dagshub INFO Initialized MLflow to track repo "osyed8452/NetworkSecurity"
+[2025-08-02 15:52:37,145] 107 dagshub INFO Repository osyed8452/NetworkSecurity initialized!
+[2025-08-02 15:52:37,146] 24 root INFO initiate the data ingesiton
+[2025-08-02 15:52:43,579] 60 root INFO data splits into train and test set
+[2025-08-02 15:52:43,581] 65 root INFO exporting train and test file path
+[2025-08-02 15:52:43,745] 71 root INFO exported test and train path
+[2025-08-02 15:52:43,746] 26 root INFO Data initiation completed 
+[2025-08-02 15:52:43,758] 34 root INFO data validation is initiated
+[2025-08-02 15:52:43,821] 35 root INFO Required NO. of columns:2
+[2025-08-02 15:52:43,822] 36 root INFO DataFrame has columns:31
+[2025-08-02 15:52:43,822] 35 root INFO Required NO. of columns:2
+[2025-08-02 15:52:43,822] 36 root INFO DataFrame has columns:31
+[2025-08-02 15:52:44,166] 36 root INFO data validation is completed
+[2025-08-02 15:52:44,169] 43 root INFO data transformation is initiated
+[2025-08-02 15:52:44,169] 57 root INFO Entered initiate_data_transformation method of DataTransformation class
+[2025-08-02 15:52:44,169] 59 root INFO starting data transformation
+[2025-08-02 15:52:44,227] 43 root INFO Entered get_data_trnasformer_object method of Trnasformation class
+[2025-08-02 15:52:44,228] 49 root INFO initialize knn imputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-08-02 15:52:44,257] 49 root INFO entered the save onject method of utils class
+[2025-08-02 15:52:44,264] 53 root INFO exited,the object is saved in a pickle file
+[2025-08-02 15:52:44,264] 49 root INFO entered the save onject method of utils class
+[2025-08-02 15:52:44,270] 53 root INFO exited,the object is saved in a pickle file
+[2025-08-02 15:52:44,272] 45 root INFO data transformation is completed
+[2025-08-02 15:52:44,274] 52 root INFO model training is initiated
+[2025-08-02 15:52:44,274] 73 root INFO loading the data from Artifacts\08_02_2025_15_52_31\data_transformation\transformed\train.npy
+[2025-08-02 15:52:44,278] 73 root INFO loading the data from Artifacts\08_02_2025_15_52_31\data_transformation\transformed\test.npy
+[2025-08-02 15:58:57,537] 98 root INFO getting classification score from classification metrics file
+[2025-08-02 15:59:23,368] 58 root INFO loading the object from Artifacts\08_02_2025_15_52_31\data_transformation\transformed_object\preprocessing.pkl
+[2025-08-02 15:59:23,384] 114 root INFO saving the network model:<Network_security.utils.ml_utils.model.estimator.Networkmodel object at 0x000001F06F8C3C70>
+[2025-08-02 15:59:23,384] 49 root INFO entered the save onject method of utils class
+[2025-08-02 15:59:23,392] 53 root INFO exited,the object is saved in a pickle file
+[2025-08-02 15:59:23,394] 118 root INFO saving the best model:DecisionTreeClassifier(criterion='entropy')
+[2025-08-02 15:59:23,395] 49 root INFO entered the save onject method of utils class
+[2025-08-02 15:59:23,398] 53 root INFO exited,the object is saved in a pickle file
+[2025-08-02 15:59:23,406] 54 root INFO model training iss completed
